@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/arkaPlanRenk"
+    android:orientation="vertical"
+    android:padding="16dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".KarGosterActivity">
+
+    <RadioGroup
+        android:id="@+id/radioGroupRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="8dp">
+
+        <RadioButton
+            android:id="@+id/rbIsletmeKar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="İşletme Kar/Zarar"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"/>
+
+        <RadioButton
+            android:id="@+id/rbHayvanKar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:text="Hayvan Kar/Zarar"
+            android:textColor="@android:color/black"/>
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/aramaKutusuKar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ara..."
+        android:padding="10dp"
+        android:drawableStart="@android:drawable/ic_menu_search"
+        android:drawablePadding="8dp"
+        android:background="@android:drawable/edit_text"
+        android:inputType="text"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray"/>
+
+    <ListView
+        android:id="@+id/listViewKar"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:dividerHeight="1dp"
+        android:background="@drawable/edittextarkaplan"/>
+</LinearLayout>

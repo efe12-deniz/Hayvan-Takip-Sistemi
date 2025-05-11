@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.KotraProje"
+        tools:targetApi="31">
+        <activity
+            android:name=".NotDetayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NotlarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NotDetayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".kargoster"
+            android:exported="false" />
+        <activity
+            android:name=".KarGosterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListelerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".hayvanbilgiguncellemesi"
+            android:exported="false" />
+        <activity
+            android:name=".hayvankesimislemi"
+            android:exported="false" />
+        <activity
+            android:name=".hayvansatisislemi"
+            android:exported="false" />
+        <activity
+            android:name=".hayvanalisislemi"
+            android:exported="false" />
+        <activity
+            android:name=".hayvan_islemleri"
+            android:exported="false" />
+        <activity
+            android:name=".kotraguncellemeislemi"
+            android:exported="false" />
+        <activity
+            android:name=".kotrasilmeislemi"
+            android:exported="false" />
+        <activity
+            android:name=".Kotraeklemeislemi"
+            android:exported="false" />
+        <activity
+            android:name=".Kotra_islemleri"
+            android:exported="false" />
+        <activity
+            android:name=".AnaSayfa"
+            android:exported="false" />
+        <activity
+            android:name=".KayitOl"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

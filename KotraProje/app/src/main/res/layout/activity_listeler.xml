@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/arkaPlanRenk"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ListelerActivity">
+
+
+
+
+    <RadioGroup
+        android:id="@+id/radioGroupRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbKotra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kotralar"
+            android:textColor="@android:color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rbMevcut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mevcut Hayvanlar"
+            android:textColor="@android:color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroupRow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="12dp">
+
+        <RadioButton
+            android:id="@+id/rbSatilan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:text="Satılan Hayvanlar"
+            android:textColor="@android:color/black" />
+
+        <RadioButton
+            android:id="@+id/rbKesilen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:text="Kesilen Hayvanlar"
+            android:textColor="@android:color/black" />
+    </RadioGroup>
+
+
+
+    <EditText
+        android:id="@+id/aramaKutusu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@android:drawable/edit_text"
+        android:drawableStart="@android:drawable/ic_menu_search"
+        android:drawablePadding="8dp"
+        android:hint="Ara..."
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray" />
+
+    <ListView
+        android:id="@+id/listeView"
+        android:layout_width="match_parent"
+        android:layout_height="710dp"
+        android:layout_marginBottom="30dp"
+        android:layout_weight="1"
+        android:background="@drawable/edittextarkaplan"
+        android:dividerHeight="1dp" />
+
+</LinearLayout>
